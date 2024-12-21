@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: whitesmoke; */
+}
+
+html{
+    font-size: 62.5%;
+    /* background-color: blue; */
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image:url("../mainBackground.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 50rem;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+h1{
+    color: white ;
+    font-size:xx-large;
+}
+
+input{
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    padding: 1rem;
+    margin: 2rem;
+    width: 30rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.5);
+
+}
+
+button{
+    height: 4rem;
+    width: 4rem;
+    font-size: 2rem;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.5);
+
+    /* padding: 1rem; */
+}
+
+.weather-icon{
+    width: 25rem;
+}
+
+.temperature{
+    color: whitesmoke;
+    font-size:4rem;
+    font-weight: 500;
+}
+
+.city{
+    color: whitesmoke;
+    font-size:3rem;
+    font-weight: 500;
+}
+
+.weatherData{
+    display: flex;
+    gap: 15rem;
+    margin-top: 3rem;
+    color: whitesmoke;
+}
+
+
+.weatherData, p ,span{
+    font-size:small;
+}
+
+
+
+
+
+
+
+@media (max-width:998px){
+    html{
+        font-size: 60%;
+    }
+}
+
+@media (max-width:768px){
+    html{
+        font-size: 50%;
+    }
+}
+
+@media (max-width:480px){
+    html{
+        font-size: 40%;
+    }
+
+    button{
+        height: 5rem;
+        width: 5rem;
+        font-size: 2rem;
+    }
+}
+
