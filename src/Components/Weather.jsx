@@ -43,7 +43,9 @@ const Weather = () => {
 
       const response = await fetch(url);
       const data = await response.json();
-      console.log(data)
+      if (!response.ok){
+        alert("Incorrect City")
+      }
       const icon = allIcons[data.weather[0].icon] || clear;
       setweatherData({
         humidity:data.main.humidity,
